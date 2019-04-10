@@ -1,6 +1,6 @@
 package creationalpatterns.AbstractFactory.data;
 
-public class Call extends MonitoringFeatures {
+public class Call extends MonitoringFeature {
 
     @Override
     public String getFeatureName() {

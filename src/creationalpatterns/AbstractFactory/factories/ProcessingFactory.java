@@ -1,17 +1,17 @@
 package creationalpatterns.AbstractFactory.factories;
 
-import creationalpatterns.AbstractFactory.data.MonitoringFeatures;
+import creationalpatterns.AbstractFactory.data.MonitoringFeature;
 import creationalpatterns.AbstractFactory.process.AIProcessing;
 import creationalpatterns.AbstractFactory.process.MLProcessing;
-import creationalpatterns.AbstractFactory.process.ProcessingUnit;
+import creationalpatterns.AbstractFactory.process.ProcessingTechnique;
 
 public class ProcessingFactory extends AbstractFactory{
     @Override
-    public MonitoringFeatures getFeatureFactory(String str) {
+    public MonitoringFeature getFeature(String str) {
         return null;
     }
 
-    public ProcessingUnit getProcessingFactory(String processingTechnique){
+    public ProcessingTechnique getProcessingTechnique(String processingTechnique){
         switch (processingTechnique){
             case "ai" :
                 return new AIProcessing();

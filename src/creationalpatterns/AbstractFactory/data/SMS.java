@@ -1,6 +1,6 @@
 package creationalpatterns.AbstractFactory.data;
 
-public class SMS extends MonitoringFeatures {
+public class SMS extends MonitoringFeature {
     @Override
     public String getFeatureName() {
         return "Sms Feature";

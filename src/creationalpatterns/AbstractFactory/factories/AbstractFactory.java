@@ -1,9 +1,11 @@
 package creationalpatterns.AbstractFactory.factories;
 
-import creationalpatterns.AbstractFactory.data.MonitoringFeatures;
-import creationalpatterns.AbstractFactory.process.ProcessingUnit;
 
+import creationalpatterns.AbstractFactory.data.MonitoringFeature;
+import creationalpatterns.AbstractFactory.process.ProcessingTechnique;
+
+//An interface/abstract class for creating related products
 public abstract class AbstractFactory {
-    public abstract MonitoringFeatures getFeatureFactory(String str);
-    public abstract ProcessingUnit getProcessingFactory(String str);
+    public abstract MonitoringFeature getFeature(String str);
+    public abstract ProcessingTechnique getProcessingTechnique(String str);
 }

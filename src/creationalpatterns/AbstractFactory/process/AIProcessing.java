@@ -1,6 +1,6 @@
 package creationalpatterns.AbstractFactory.process;
 
-public class AIProcessing extends ProcessingUnit {
+public class AIProcessing extends ProcessingTechnique {
     @Override
     public void processWeightage() {
         System.out.println("Different Algorithm for Processing Weightages for AI");

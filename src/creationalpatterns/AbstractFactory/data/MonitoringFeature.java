@@ -1,6 +1,6 @@
 package creationalpatterns.AbstractFactory.data;
 
-public abstract class MonitoringFeatures{
+public abstract class MonitoringFeature{
 
    public abstract String getFeatureName();
    public abstract void backUp();
